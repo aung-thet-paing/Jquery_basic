@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.7.1.min.js.js"></script>
+    <script>
+        $("document").ready(function(){
+           //animate({params},speed,callback)
+          $("#grow").click(function(){
+            $("#textBox").animate({ width:"200px"},3000);
+          });
+
+          $("#move").click(function(){
+            $("#textBox").animate({marginLeft:"100px"},3000);
+          });
+
+          $("#manyThing").click(function(){
+            $("#textBox").animate({
+                width:"200px",
+                fontSize:"25px",
+                marginLeft:"200px"
+            },3000)
+          })
+        });
+    </script>
+
+    <style>
+        #textBox {
+            width: 150px;
+            font-size: 20px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+<a href="#" id="grow">Grow</a>
+<a href="#" id="move">Move</a>
+<a href="#" id="manyThing">Many Thing</a>
+<div id="textBox">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis facere, expedita voluptatem fugiat ad assumenda laborum soluta totam eos ipsum ut, deserunt, alias vel sapiente error unde tenetur? Totam!
+</div>
+</body>
+</html>
