@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.7.1.min.js.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#add-class").click(function(){
+                $("p:first").addClass("p");
+            });
+
+            $("#remove-class").click(function(){
+                $("p:first").removeClass("p");
+            });
+
+            $("#toggle-class").click(function(){
+                $("p:first").toggleClass("p");
+            });
+
+            $("#increase-class").click(function(){
+                $("p:first").css({"borderWidth":"+=1px","borderStyle":"solid","borderColor":"red"});
+            });  
+        });
+    </script>
+
+    <style>
+        .p {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="add-class">Add Class</a><br>
+    <a href="#" id="remove-class">Remove Class</a><br>
+    <a href="#" id="toggle-class">Toggle Class</a><br>
+    <a href="#" id="increase-class">Increase Class</a><br>
+<div id="container">
+    <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis facere, expedita voluptatem fugiat ad assumenda laborum soluta totam eos ipsum ut, deserunt, alias vel sapiente error unde tenetur? Totam!</p>
+    <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis facere, expedita voluptatem fugiat ad assumenda laborum soluta totam eos ipsum ut, deserunt, alias vel sapiente error unde tenetur? Totam!</p>
+    <p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis facere, expedita voluptatem fugiat ad assumenda laborum soluta totam eos ipsum ut, deserunt, alias vel sapiente error unde tenetur? Totam!</p>
+    <p>4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis facere, expedita voluptatem fugiat ad assumenda laborum soluta totam eos ipsum ut, deserunt, alias vel sapiente error unde tenetur? Totam!</p>
+    <p>5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis facere, expedita voluptatem fugiat ad assumenda laborum soluta totam eos ipsum ut, deserunt, alias vel sapiente error unde tenetur? Totam!</p>
+    <p>6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis facere, expedita voluptatem fugiat ad assumenda laborum soluta totam eos ipsum ut, deserunt, alias vel sapiente error unde tenetur? Totam!</p>
+    <p>7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis facere, expedita voluptatem fugiat ad assumenda laborum soluta totam eos ipsum ut, deserunt, alias vel sapiente error unde tenetur? Totam!</p>
+</div>
+</body>
+</html>
